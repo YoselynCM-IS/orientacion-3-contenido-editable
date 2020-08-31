@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+        <!--Empezar a agregar contenido-->
+        <span style="position: absolute; top: 275px; left: 101px; width: 507px; height: 234px;">
+			<img id="horiz3_p29res1" src="bgimg/01.jpg" width="507"  height="234"> 
+		</span>
+	  <script type="text/javascript">
+                var horiz3_p29res1 = document.getElementById('horiz3_p29res1');
+                if (localStorage.getItem("Img_horiz3_p29res1") === null) {
+                    var dataImage = "bgimg/01.jpg"
+                }
+                else {
+                    var dataImage = localStorage.getItem('Img_horiz3_p29res1');
+                }
+                horiz3_p29res1.src = dataImage;
+                var previewZone = document.getElementById('horiz3_p29res1-zone');
+                previewZone.appendChild(horiz3_p29res1);
+            </script>
+
+            <div id="divFileUpload1" style="position: absolute; top: 249px; left: 313px">
+                <input class="btn btn-primary" id="file-upload1" type="file" accept="image/*" />
+            </div>
+            
+	  <span style="position: absolute; top: 539px; left: 99px; width: 507px; height: 234px;">
+			<img id="horiz3_p29res2" src="bgimg/01.jpg" width="507"  height="234"> 
+		</span>
+	  <script type="text/javascript">
+                var horiz3_p29res2 = document.getElementById('horiz3_p29res2');
+                if (localStorage.getItem("Img_horiz3_p29res2") === null) {
+                    var dataImage = "bgimg/01.jpg"
+                }
+                else {
+                    var dataImage = localStorage.getItem('Img_horiz3_p29res2');
+                }
+                horiz3_p29res2.src = dataImage;
+                var previewZone = document.getElementById('horiz3_p29res2-zone');
+                previewZone.appendChild(horiz3_p29res2);
+            </script>
+
+            <div id="divFileUpload2" style="position: absolute; top: 514px; left: 340px">
+                <input class="btn btn-primary" id="file-upload2" type="file" accept="image/*" />
+            </div>
+            
+	  <span style="position: absolute; top: 799px; left: 100px; width: 507px; height: 234px;">
+			<img id="horiz3_p29res3" src="bgimg/01.jpg" width="507"  height="234"> 
+		</span>
+		
+	  <script type="text/javascript">
+                var horiz3_p29res3 = document.getElementById('horiz3_p29res3');
+                if (localStorage.getItem("Img_horiz3_p29res3") === null) {
+                    var dataImage = "bgimg/01.jpg"
+                }
+                else {
+                    var dataImage = localStorage.getItem('Img_horiz3_p29res3');
+                }
+                horiz3_p29res3.src = dataImage;
+                var previewZone = document.getElementById('horiz3_p29res3-zone');
+                previewZone.appendChild(horiz3_p29res3);
+            </script>
+
+            <div id="divFileUpload3" style="position: absolute; top: 775px; left: 332px">
+                <input class="btn btn-primary" id="file-upload3" type="file" accept="image/*" />
+            </div>
+		
+       
+        <!--Fin del contenido-->
+           <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<form style="margin-top: 1070px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Guardar"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Enviar" class="btn btn-primary"> 
+			<input type="hidden" id="horiz3_regNA" name="horiz3_regNA">
+			<input type="hidden" id="horiz3_regGP" name="horiz3_regGP">
+			<input type="hidden" id="horiz3_regCA" name="horiz3_regCA">
+			<input type="hidden" id="horiz3_regND" name="horiz3_regND">
+			<input type="hidden" id="horiz3_regCD" name="horiz3_regCD">
+		</form>
+
+		<!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1060px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script>
+    function readFile(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+     
+            reader.onload = function (e) {
+                var horiz3_p29res1 = document.getElementById('horiz3_p29res1');
+                //e.target.result contents the base64 data from the image uploaded
+                horiz3_p29res1.src = e.target.result;
+                console.log(e.target.result);
+     
+                var previewZone = document.getElementById('horiz3_p29res1-zone');
+                previewZone.appendChild(horiz3_p29res1);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    var fileUpload = document.getElementById('file-upload1');
+    fileUpload.onchange = function (e) {
+        //document.getElementById('file-preview-zone').innerHTML = "";
+        readFile(e.srcElement);
+    }
+     
+    function readFile1(input) {
+        if (input.files && input.files[0]) {
+            var reader1 = new FileReader();
+     
+            reader1.onload = function (e) {
+                var horiz3_p29res2 = document.getElementById('horiz3_p29res2');
+                //e.target.result contents the base64 data from the image uploaded
+                horiz3_p29res2.src = e.target.result;
+                console.log(e.target.result);
+     
+                var previewZone2 = document.getElementById('horiz3_p29res2-zone');
+                previewZone2.appendChild(horiz3_p29res2);
+            }
+    
+            reader1.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    var fileUpload1 = document.getElementById('file-upload2');
+    fileUpload1.onchange = function (e) {
+        //document.getElementById('file-preview-zone').innerHTML = "";
+        readFile1(e.srcElement);
+    }
+
+    function readFile2(input) {
+        if (input.files && input.files[0]) {
+            var reader2 = new FileReader();
+     
+            reader2.onload = function (e) {
+                var horiz3_p29res3 = document.getElementById('horiz3_p29res3');
+                //e.target.result contents the base64 data from the image uploaded
+                horiz3_p29res3.src = e.target.result;
+                console.log(e.target.result);
+     
+                var previewZone3 = document.getElementById('horiz3_p29res3-zone');
+                previewZone3.appendChild(horiz3_p29res3);
+            }
+    
+            reader2.readAsDataURL(input.files[0]);
+        }
+    }
+     
+    var fileUpload2 = document.getElementById('file-upload3');
+    fileUpload2.onchange = function (e) {
+        //document.getElementById('file-preview-zone').innerHTML = "";
+        readFile2(e.srcElement);
+    }
+     
+</script>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('horiz3_regNA').value = localStorage.getItem('horiz3_regNA');
+    document.getElementById('horiz3_regGP').value = localStorage.getItem('horiz3_regGP');
+    document.getElementById('horiz3_regCA').value = localStorage.getItem('horiz3_regCA');
+    document.getElementById('horiz3_regND').value = localStorage.getItem('horiz3_regND');
+    document.getElementById('horiz3_regCD').value = localStorage.getItem('horiz3_regCD');
+
+	
+
+    function save_data(){
+        //local storage
+        bannerImage = document.getElementById('horiz3_p29res1').src;
+        localStorage.setItem("Img_horiz3_p29res1", bannerImage);
+
+        bannerImage2 = document.getElementById('horiz3_p29res2').src;
+        localStorage.setItem("Img_horiz3_p29res2", bannerImage2);
+
+         bannerImage3 = document.getElementById('horiz3_p29res3').src;
+        localStorage.setItem("Img_horiz3_p29res3", bannerImage3);
+
+        alert("Guardado correctamente");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>

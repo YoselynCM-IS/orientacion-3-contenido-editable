@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+        <!--Empezar a agregar contenido-->
+        
+		<span style="position: absolute; top: 272px; left: 667px">
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res1"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res2"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res3"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res4"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res5"></textarea>
+		</span>
+      <span style="position: absolute; top: 383px; left: 667px">
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res6"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res7"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res8"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res9"></textarea><br>
+	  <textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res10"></textarea>
+		</span>
+      <span style="position: absolute; top: 498px; left: 667px">
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res11"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res12"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res13"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res14"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res15"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res16"></textarea><br>
+	  <textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res17"></textarea>
+		</span>
+      <span style="position: absolute; top: 650px; left: 667px">
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res18"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res19"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res20"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res21"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res22"></textarea><br>
+	  <textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res23"></textarea>
+		</span>
+      <span style="position: absolute; top: 785px; left: 667px">
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res24"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res25"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res26"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res27"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res28"></textarea><br>
+	  <textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res29"></textarea>
+		</span>
+      <span style="position: absolute; top: 916px; left: 667px">
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res30"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res31"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res32"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res33"></textarea><br>
+			<textarea rows = "1" cols = "12" maxlength = "12" id="horiz3_p141res34"></textarea>
+		</span>
+       
+        <!--Fin del contenido-->
+           <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<form style="margin-top: 1070px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Guardar"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Enviar" class="btn btn-primary"> 
+			<input type="hidden" id="horiz3_regNA" name="horiz3_regNA">
+			<input type="hidden" id="horiz3_regGP" name="horiz3_regGP">
+			<input type="hidden" id="horiz3_regCA" name="horiz3_regCA">
+			<input type="hidden" id="horiz3_regND" name="horiz3_regND">
+			<input type="hidden" id="horiz3_regCD" name="horiz3_regCD">
+		</form>
+
+		<!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1060px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('horiz3_regNA').value = localStorage.getItem('horiz3_regNA');
+    document.getElementById('horiz3_regGP').value = localStorage.getItem('horiz3_regGP');
+    document.getElementById('horiz3_regCA').value = localStorage.getItem('horiz3_regCA');
+    document.getElementById('horiz3_regND').value = localStorage.getItem('horiz3_regND');
+    document.getElementById('horiz3_regCD').value = localStorage.getItem('horiz3_regCD');
+
+	 document.getElementById('horiz3_p141res1').value = localStorage.getItem('horiz3_p141res1');
+    document.getElementById('horiz3_p141res2').value = localStorage.getItem('horiz3_p141res2');
+    document.getElementById('horiz3_p141res3').value = localStorage.getItem('horiz3_p141res3');
+    document.getElementById('horiz3_p141res4').value = localStorage.getItem('horiz3_p141res4');
+    document.getElementById('horiz3_p141res5').value = localStorage.getItem('horiz3_p141res5');
+    document.getElementById('horiz3_p141res6').value = localStorage.getItem('horiz3_p141res6');
+    document.getElementById('horiz3_p141res7').value = localStorage.getItem('horiz3_p141res7');
+    document.getElementById('horiz3_p141res8').value = localStorage.getItem('horiz3_p141res8');
+    document.getElementById('horiz3_p141res9').value = localStorage.getItem('horiz3_p141res9');
+    document.getElementById('horiz3_p141res10').value = localStorage.getItem('horiz3_p141res10');
+    document.getElementById('horiz3_p141res11').value = localStorage.getItem('horiz3_p141res11');
+    document.getElementById('horiz3_p141res12').value = localStorage.getItem('horiz3_p141res12');
+    document.getElementById('horiz3_p141res13').value = localStorage.getItem('horiz3_p141res13');
+    document.getElementById('horiz3_p141res14').value = localStorage.getItem('horiz3_p141res14');
+    document.getElementById('horiz3_p141res15').value = localStorage.getItem('horiz3_p141res15');
+    document.getElementById('horiz3_p141res16').value = localStorage.getItem('horiz3_p141res16');
+    document.getElementById('horiz3_p141res17').value = localStorage.getItem('horiz3_p141res17');
+    document.getElementById('horiz3_p141res18').value = localStorage.getItem('horiz3_p141res18');
+    document.getElementById('horiz3_p141res19').value = localStorage.getItem('horiz3_p141res19');
+    document.getElementById('horiz3_p141res20').value = localStorage.getItem('horiz3_p141res20');
+    document.getElementById('horiz3_p141res21').value = localStorage.getItem('horiz3_p141res21');
+    document.getElementById('horiz3_p141res22').value = localStorage.getItem('horiz3_p141res22');
+    document.getElementById('horiz3_p141res23').value = localStorage.getItem('horiz3_p141res23');
+    document.getElementById('horiz3_p141res24').value = localStorage.getItem('horiz3_p141res24');
+    document.getElementById('horiz3_p141res25').value = localStorage.getItem('horiz3_p141res25');
+    document.getElementById('horiz3_p141res26').value = localStorage.getItem('horiz3_p141res26');
+    document.getElementById('horiz3_p141res27').value = localStorage.getItem('horiz3_p141res27');
+    document.getElementById('horiz3_p141res28').value = localStorage.getItem('horiz3_p141res28');
+    document.getElementById('horiz3_p141res29').value = localStorage.getItem('horiz3_p141res29');
+    document.getElementById('horiz3_p141res30').value = localStorage.getItem('horiz3_p141res30');
+    document.getElementById('horiz3_p141res31').value = localStorage.getItem('horiz3_p141res31');
+    document.getElementById('horiz3_p141res32').value = localStorage.getItem('horiz3_p141res32');
+    document.getElementById('horiz3_p141res33').value = localStorage.getItem('horiz3_p141res33');
+    document.getElementById('horiz3_p141res34').value = localStorage.getItem('horiz3_p141res34');
+    
+
+    function save_data(){
+        var horiz3_p141res1 = document.getElementById('horiz3_p141res1').value;
+        localStorage.setItem('horiz3_p141res1', horiz3_p141res1);
+        var horiz3_p141res2 = document.getElementById('horiz3_p141res2').value;
+        localStorage.setItem('horiz3_p141res2', horiz3_p141res2);
+        var horiz3_p141res3 = document.getElementById('horiz3_p141res3').value;
+        localStorage.setItem('horiz3_p141res3', horiz3_p141res3);
+        var horiz3_p141res4 = document.getElementById('horiz3_p141res4').value;
+        localStorage.setItem('horiz3_p141res4', horiz3_p141res4);
+        var horiz3_p141res5 = document.getElementById('horiz3_p141res5').value;
+        localStorage.setItem('horiz3_p141res5', horiz3_p141res5);
+        var horiz3_p141res6 = document.getElementById('horiz3_p141res6').value;
+        localStorage.setItem('horiz3_p141res6', horiz3_p141res6);
+        var horiz3_p141res7 = document.getElementById('horiz3_p141res7').value;
+        localStorage.setItem('horiz3_p141res7', horiz3_p141res7);
+        var horiz3_p141res8 = document.getElementById('horiz3_p141res8').value;
+        localStorage.setItem('horiz3_p141res8', horiz3_p141res8);
+        var horiz3_p141res9 = document.getElementById('horiz3_p141res9').value;
+        localStorage.setItem('horiz3_p141res9', horiz3_p141res9);
+        var horiz3_p141res10 = document.getElementById('horiz3_p141res10').value;
+        localStorage.setItem('horiz3_p141res10', horiz3_p141res10);
+        var horiz3_p141res11 = document.getElementById('horiz3_p141res11').value;
+        localStorage.setItem('horiz3_p141res11', horiz3_p141res11);
+        var horiz3_p141res12 = document.getElementById('horiz3_p141res12').value;
+        localStorage.setItem('horiz3_p141res12', horiz3_p141res12);
+        var horiz3_p141res13 = document.getElementById('horiz3_p141res13').value;
+        localStorage.setItem('horiz3_p141res13', horiz3_p141res13);
+        var horiz3_p141res14 = document.getElementById('horiz3_p141res14').value;
+        localStorage.setItem('horiz3_p141res14', horiz3_p141res14);
+        var horiz3_p141res15 = document.getElementById('horiz3_p141res15').value;
+        localStorage.setItem('horiz3_p141res15', horiz3_p141res15);
+        var horiz3_p141res16 = document.getElementById('horiz3_p141res16').value;
+        localStorage.setItem('horiz3_p141res16', horiz3_p141res16);
+        var horiz3_p141res17 = document.getElementById('horiz3_p141res17').value;
+        localStorage.setItem('horiz3_p141res17', horiz3_p141res17);
+        var horiz3_p141res18 = document.getElementById('horiz3_p141res18').value;
+        localStorage.setItem('horiz3_p141res18', horiz3_p141res18);
+        var horiz3_p141res19 = document.getElementById('horiz3_p141res19').value;
+        localStorage.setItem('horiz3_p141res19', horiz3_p141res19);
+        var horiz3_p141res20 = document.getElementById('horiz3_p141res20').value;
+        localStorage.setItem('horiz3_p141res20', horiz3_p141res20);
+        var horiz3_p141res21 = document.getElementById('horiz3_p141res21').value;
+        localStorage.setItem('horiz3_p141res21', horiz3_p141res21);
+        var horiz3_p141res22 = document.getElementById('horiz3_p141res22').value;
+        localStorage.setItem('horiz3_p141res22', horiz3_p141res22);
+        var horiz3_p141res23 = document.getElementById('horiz3_p141res23').value;
+        localStorage.setItem('horiz3_p141res23', horiz3_p141res23);
+        var horiz3_p141res24 = document.getElementById('horiz3_p141res24').value;
+        localStorage.setItem('horiz3_p141res24', horiz3_p141res24);
+        var horiz3_p141res25 = document.getElementById('horiz3_p141res25').value;
+        localStorage.setItem('horiz3_p141res25', horiz3_p141res25);
+        var horiz3_p141res26 = document.getElementById('horiz3_p141res26').value;
+        localStorage.setItem('horiz3_p141res26', horiz3_p141res26);
+        var horiz3_p141res27 = document.getElementById('horiz3_p141res27').value;
+        localStorage.setItem('horiz3_p141res27', horiz3_p141res27);
+        var horiz3_p141res28 = document.getElementById('horiz3_p141res28').value;
+        localStorage.setItem('horiz3_p141res28', horiz3_p141res28);
+        var horiz3_p141res29 = document.getElementById('horiz3_p141res29').value;
+        localStorage.setItem('horiz3_p141res29', horiz3_p141res29);
+        var horiz3_p141res30 = document.getElementById('horiz3_p141res30').value;
+        localStorage.setItem('horiz3_p141res30', horiz3_p141res30);
+        var horiz3_p141res31 = document.getElementById('horiz3_p141res31').value;
+        localStorage.setItem('horiz3_p141res31', horiz3_p141res31);
+        var horiz3_p141res32 = document.getElementById('horiz3_p141res32').value;
+        localStorage.setItem('horiz3_p141res32', horiz3_p141res32);
+        var horiz3_p141res33 = document.getElementById('horiz3_p141res33').value;
+        localStorage.setItem('horiz3_p141res33', horiz3_p141res33);
+        var horiz3_p141res34 = document.getElementById('horiz3_p141res34').value;
+        localStorage.setItem('horiz3_p141res34', horiz3_p141res34);
+        
+        alert("Guardado correctamente");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>

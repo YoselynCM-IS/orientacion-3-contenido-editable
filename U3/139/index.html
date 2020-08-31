@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+        <!--Empezar a agregar contenido-->
+        
+		<span style="position: absolute; top: 790px; left: 152px">
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res1"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res2"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res3"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res4"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res5"></textarea>
+		</span>
+      <span style="position: absolute; top: 920px; left: 150px">
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res6"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res7"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res8"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res9"></textarea><br>
+			<textarea rows = "1" cols = "60" maxlength = "60" id="horiz3_p139res10"></textarea>
+		</span>
+       
+        <!--Fin del contenido-->
+           <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<form style="margin-top: 1070px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Guardar"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Enviar" class="btn btn-primary"> 
+			<input type="hidden" id="horiz3_regNA" name="horiz3_regNA">
+			<input type="hidden" id="horiz3_regGP" name="horiz3_regGP">
+			<input type="hidden" id="horiz3_regCA" name="horiz3_regCA">
+			<input type="hidden" id="horiz3_regND" name="horiz3_regND">
+			<input type="hidden" id="horiz3_regCD" name="horiz3_regCD">
+		</form>
+
+		<!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1060px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('horiz3_regNA').value = localStorage.getItem('horiz3_regNA');
+    document.getElementById('horiz3_regGP').value = localStorage.getItem('horiz3_regGP');
+    document.getElementById('horiz3_regCA').value = localStorage.getItem('horiz3_regCA');
+    document.getElementById('horiz3_regND').value = localStorage.getItem('horiz3_regND');
+    document.getElementById('horiz3_regCD').value = localStorage.getItem('horiz3_regCD');
+
+	 document.getElementById('horiz3_p139res1').value = localStorage.getItem('horiz3_p139res1');
+    document.getElementById('horiz3_p139res2').value = localStorage.getItem('horiz3_p139res2');
+    document.getElementById('horiz3_p139res3').value = localStorage.getItem('horiz3_p139res3');
+    document.getElementById('horiz3_p139res4').value = localStorage.getItem('horiz3_p139res4');
+    document.getElementById('horiz3_p139res5').value = localStorage.getItem('horiz3_p139res5');
+    document.getElementById('horiz3_p139res6').value = localStorage.getItem('horiz3_p139res6');
+    document.getElementById('horiz3_p139res7').value = localStorage.getItem('horiz3_p139res7');
+    document.getElementById('horiz3_p139res8').value = localStorage.getItem('horiz3_p139res8');
+    document.getElementById('horiz3_p139res9').value = localStorage.getItem('horiz3_p139res9');
+    document.getElementById('horiz3_p139res10').value = localStorage.getItem('horiz3_p139res10');
+    
+
+    function save_data(){
+        var horiz3_p139res1 = document.getElementById('horiz3_p139res1').value;
+        localStorage.setItem('horiz3_p139res1', horiz3_p139res1);
+        var horiz3_p139res2 = document.getElementById('horiz3_p139res2').value;
+        localStorage.setItem('horiz3_p139res2', horiz3_p139res2);
+        var horiz3_p139res3 = document.getElementById('horiz3_p139res3').value;
+        localStorage.setItem('horiz3_p139res3', horiz3_p139res3);
+        var horiz3_p139res4 = document.getElementById('horiz3_p139res4').value;
+        localStorage.setItem('horiz3_p139res4', horiz3_p139res4);
+        var horiz3_p139res5 = document.getElementById('horiz3_p139res5').value;
+        localStorage.setItem('horiz3_p139res5', horiz3_p139res5);
+        var horiz3_p139res6 = document.getElementById('horiz3_p139res6').value;
+        localStorage.setItem('horiz3_p139res6', horiz3_p139res6);
+        var horiz3_p139res7 = document.getElementById('horiz3_p139res7').value;
+        localStorage.setItem('horiz3_p139res7', horiz3_p139res7);
+        var horiz3_p139res8 = document.getElementById('horiz3_p139res8').value;
+        localStorage.setItem('horiz3_p139res8', horiz3_p139res8);
+        var horiz3_p139res9 = document.getElementById('horiz3_p139res9').value;
+        localStorage.setItem('horiz3_p139res9', horiz3_p139res9);
+        var horiz3_p139res10 = document.getElementById('horiz3_p139res10').value;
+        localStorage.setItem('horiz3_p139res10', horiz3_p139res10);
+        
+
+        alert("Guardado correctamente");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>

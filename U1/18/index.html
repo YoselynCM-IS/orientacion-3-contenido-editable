@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+        <!--Empezar a agregar contenido-->
+        <span style="position: absolute; top: 237px; left: 274px">
+			<input type="checkbox" id="horiz3_p18res1">
+		</span>
+	  <span style="position: absolute; top: 281px; left: 274px">
+			<input type="checkbox" id="horiz3_p18res2">
+	  </span>
+	  <span style="position: absolute; top: 308px; left: 275px">
+			<input type="checkbox" id="horiz3_p18res3">
+	  </span>
+	  <span style="position: absolute; top: 335px; left: 275px">
+			<input type="checkbox" id="horiz3_p18res4">
+	  </span>
+	  <span style="position: absolute; top: 380px; left: 275px">
+			<input type="checkbox" id="horiz3_p18res5">
+	  </span>
+	  <span style="position: absolute; top: 461px; left: 276px">
+			<input type="checkbox" id="horiz3_p18res6">
+	  </span>
+	  <span style="position: absolute; top: 487px; left: 276px">
+			<input type="checkbox" id="horiz3_p18res7">
+	  </span>
+	  <span style="position: absolute; top: 515px; left: 277px">
+			<input type="checkbox" id="horiz3_p18res8">
+	  </span>
+	  <span style="position: absolute; top: 543px; left: 276px">
+			<input type="checkbox" id="horiz3_p18res9">
+	  </span>
+	  <span style="position: absolute; top: 570px; left: 276px">
+			<input type="checkbox" id="horiz3_p18res10">
+	  </span>
+	  <span style="position: absolute; top: 595px; left: 276px">
+			<input type="checkbox" id="horiz3_p18res11">
+	  </span>
+	  <span style="position: absolute; top: 211px; left: 523px">
+			<input type="checkbox" id="horiz3_p18res12">
+	  </span>
+	  <span style="position: absolute; top: 238px; left: 523px">
+			<input type="checkbox" id="horiz3_p18res13">
+	  </span>
+	  <span style="position: absolute; top: 265px; left: 524px">
+			<input type="checkbox" id="horiz3_p18res14">
+	  </span>
+	  <span style="position: absolute; top: 292px; left: 524px">
+			<input type="checkbox" id="horiz3_p18res15">
+	  </span>
+	  <span style="position: absolute; top: 319px; left: 524px">
+			<input type="checkbox" id="horiz3_p18res16">
+	  </span>
+	  <span style="position: absolute; top: 344px; left: 524px">
+			<input type="checkbox" id="horiz3_p18res17">
+	  </span>
+	  <span style="position: absolute; top: 495px; left: 524px">
+			<input type="checkbox" id="horiz3_p18res18">
+	  </span>
+	  <span style="position: absolute; top: 539px; left: 525px">
+			<input type="checkbox" id="horiz3_p18res19">
+	  </span>
+	  <span style="position: absolute; top: 585px; left: 525px">
+			<input type="checkbox" id="horiz3_p18res20">
+	  </span>
+	  <span style="position: absolute; top: 629px; left: 526px">
+			<input type="checkbox" id="horiz3_p18res21">
+	  </span>
+	  <span style="position: absolute; top: 674px; left: 525px">
+			<input type="checkbox" id="horiz3_p18res22">
+	  </span>
+	  <span style="position: absolute; top: 699px; left: 525px">
+			<input type="checkbox" id="horiz3_p18res23">
+	  </span>
+	  <span style="position: absolute; top: 814px; left: 279px">
+			<input type="checkbox" id="horiz3_p18res24">
+	  </span>
+	  <span style="position: absolute; top: 841px; left: 279px">
+			<input type="checkbox" id="horiz3_p18res25">
+	  </span>
+	  <span style="position: absolute; top: 868px; left: 279px">
+			<input type="checkbox" id="horiz3_p18res26">
+	  </span>
+	  <span style="position: absolute; top: 897px; left: 278px">
+			<input type="checkbox" id="horiz3_p18res27">
+	  </span>
+	  <span style="position: absolute; top: 941px; left: 279px">
+			<input type="checkbox" id="horiz3_p18res28">
+	  </span>
+		<span style="position: absolute; top: 967px; left: 279px">
+			<input type="checkbox" id="horiz3_p18res29">
+		</span>
+		<span style="position: absolute; top: 193px; left: 277px">
+			<input type="checkbox" id="horiz3_p18res30">
+		</span>
+		
+       
+        <!--Fin del contenido-->
+           <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<form style="margin-top: 1070px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Guardar"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Enviar" class="btn btn-primary"> 
+			<input type="hidden" id="horiz3_regNA" name="horiz3_regNA">
+			<input type="hidden" id="horiz3_regGP" name="horiz3_regGP">
+			<input type="hidden" id="horiz3_regCA" name="horiz3_regCA">
+			<input type="hidden" id="horiz3_regND" name="horiz3_regND">
+			<input type="hidden" id="horiz3_regCD" name="horiz3_regCD">
+		</form>
+
+		<!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1060px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('horiz3_regNA').value = localStorage.getItem('horiz3_regNA');
+    document.getElementById('horiz3_regGP').value = localStorage.getItem('horiz3_regGP');
+    document.getElementById('horiz3_regCA').value = localStorage.getItem('horiz3_regCA');
+    document.getElementById('horiz3_regND').value = localStorage.getItem('horiz3_regND');
+    document.getElementById('horiz3_regCD').value = localStorage.getItem('horiz3_regCD');
+
+	//** INICIO PARA GUARDAR CHECKBOX **//
+        //verificar si el check esta seleccionado se asigna un 1 para activarlo al momento de cargar
+        var isChecked = document.getElementById('horiz3_p18res1').checked;
+        // si esta seleccionado se asigna bandera 1
+        if(isChecked){
+            var horiz3_p18res1 = "1";
+        }
+        localStorage.setItem('horiz3_p18res1', horiz3_p18res1);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res2').checked;
+        if(isChecked){
+            var horiz3_p18res2 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res2', horiz3_p18res2);
+        console.log("horiz3_p18res2",horiz3_p18res2);
+        //** FIN PARA GUARDAR CHECKBOX **//
+        
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res3').checked;
+        if(isChecked){
+            var horiz3_p18res3 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res3', horiz3_p18res3);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res4').checked;
+        if(isChecked){
+            var horiz3_p18res4 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res4', horiz3_p18res4);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res5').checked;
+        if(isChecked){
+            var horiz3_p18res5 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res5', horiz3_p18res5);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res6').checked;
+        if(isChecked){
+            var horiz3_p18res6 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res6', horiz3_p18res6);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res7').checked;
+        if(isChecked){
+            var horiz3_p18res7 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res7', horiz3_p18res7);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res8').checked;
+        if(isChecked){
+            var horiz3_p18res8 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res8', horiz3_p18res8);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res9').checked;
+        if(isChecked){
+            var horiz3_p18res9 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res9', horiz3_p18res9);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res10').checked;
+        if(isChecked){
+            var horiz3_p18res10 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res10', horiz3_p18res10);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res11').checked;
+        if(isChecked){
+            var horiz3_p18res11 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res11', horiz3_p18res11);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res12').checked;
+        if(isChecked){
+            var horiz3_p18res12 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res12', horiz3_p18res12);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res13').checked;
+        if(isChecked){
+            var horiz3_p18res13 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res13', horiz3_p18res13);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res14').checked;
+        if(isChecked){
+            var horiz3_p18res14 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res14', horiz3_p18res14);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res15').checked;
+        if(isChecked){
+            var horiz3_p18res15 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res15', horiz3_p18res15);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res16').checked;
+        if(isChecked){
+            var horiz3_p18res16 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res16', horiz3_p18res16);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res17').checked;
+        if(isChecked){
+            var horiz3_p18res17 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res17', horiz3_p18res17);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res18').checked;
+        if(isChecked){
+            var horiz3_p18res18 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res18', horiz3_p18res18);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res19').checked;
+        if(isChecked){
+            var horiz3_p18res19 = "1";
+        }
+        localStorage.setItem('horiz3_p18res19', horiz3_p18res19);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res20').checked;
+        if(isChecked){
+            var horiz3_p18res20 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res20', horiz3_p18res20);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res21').checked;
+        if(isChecked){
+            var horiz3_p18res21 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res21', horiz3_p18res21);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res22').checked;
+        if(isChecked){
+            var horiz3_p18res22 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res22', horiz3_p18res22);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res23').checked;
+        if(isChecked){
+            var horiz3_p18res23 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res23', horiz3_p18res23);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res24').checked;
+        if(isChecked){
+            var horiz3_p18res24 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res24', horiz3_p18res24);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res25').checked;
+        if(isChecked){
+            var horiz3_p18res25 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res25', horiz3_p18res25);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res26').checked;
+        if(isChecked){
+            var horiz3_p18res26 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res26', horiz3_p18res26);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res27').checked;
+        if(isChecked){
+            var horiz3_p18res27 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res27', horiz3_p18res27);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res28').checked;
+        if(isChecked){
+            var horiz3_p18res28 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res28', horiz3_p18res28);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res29').checked;
+        if(isChecked){
+            var horiz3_p18res29 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res29', horiz3_p18res29);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        //** INICIO PARA GUARDAR CHECKBOX **//
+        var isChecked = document.getElementById('horiz3_p18res30').checked;
+        if(isChecked){
+            var horiz3_p18res30 = "1";
+        }    
+        localStorage.setItem('horiz3_p18res30', horiz3_p18res30);
+        //** FIN PARA GUARDAR CHECKBOX **//
+
+        alert("Guardado correctamente");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>
